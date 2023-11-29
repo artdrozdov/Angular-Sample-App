@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Recipe } from '../recipe/recipe.model';
 
 @Component({
   selector: 'recipe-list',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./recipe-list.component.css']
 })
 export class RecipeListComponent {
-
+  recipes:Recipe[] = [
+    new Recipe('Pizza','Description of pizza recipe','https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Pizza-3007395.jpg/800px-Pizza-3007395.jpg')
+  ]
 }

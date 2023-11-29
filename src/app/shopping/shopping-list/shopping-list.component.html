@@ -3,6 +3,8 @@
     <div class="col-md-12">
         <shopping-list-edit></shopping-list-edit>
         <hr/>
-        <h2>Content</h2>
+        <ul class="list-group">
+            <a href="#" class="list-group-item" style="cursor:pointer" *ngFor="let ing of ingredients">{{ing.name}} ({{ing.amount}})</a>
+        </ul>
     </div>
 </div>
