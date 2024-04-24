@@ -1,1 +1,15 @@
-<p>shopping-list-edit works!</p>
+<div class="row">
+
+        <div class="form-group">
+            <label for="itemName">Name</label>
+            <input #itemName name="itemName" id="itemName" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="amount">Amount</label>
+            <input #amount id="amount" name="amount" class="form-control" type="number" value="1" />
+        </div>
+        <div class="form-group">
+            <button class="btn btn-success" (click)="addItem(itemName.value, amount.value)">Add</button>
+        </div>
+
+</div>

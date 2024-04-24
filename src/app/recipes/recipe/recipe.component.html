@@ -1,8 +1,8 @@
 <div class="row">
     <div class="col-md-5">
-        <recipe-list></recipe-list>
+        <recipe-list (onRecipeSelected)="selectedRecipe = $event"></recipe-list>
     </div>
     <div class="col-md-7">
-        <recipe-detail></recipe-detail>
+        <recipe-detail *ngIf="selectedRecipe" [currentRecipe]="selectedRecipe"></recipe-detail>
     </div>
 </div>
