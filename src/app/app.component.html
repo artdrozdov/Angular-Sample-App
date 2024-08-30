@@ -1,23 +1,4 @@
 <div class="container">
-<app-header (onAppSectionChange)="handleAppSectionChange($event)"></app-header>
-
-<div class="container" *ngIf="currentSection == 0 || currentSection === undefined">
-  <div class="page-header">
-      <h1>Landing page <small>Let's land</small></h1>
-    </div>
-</div>
-
-<div class="container" *ngIf="currentSection == 1">
-  <div class="page-header">
-      <h1>Shopping list <small>Let's go shopping</small></h1>
-  </div>
-  <shopping-list></shopping-list>
-</div>
-
-<div class="container" *ngIf="currentSection == 2">
-  <div class="page-header">
-      <h1>Recipes <small>Let's cook</small></h1>
-  </div>
-  <recipe></recipe>
-</div>
+<app-header></app-header>
+<router-outlet></router-outlet>
 </div>

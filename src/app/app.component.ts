@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { AppSection } from './header/AppSection';
 
 @Component({
   selector: 'app-root',
@@ -8,9 +7,4 @@ import { AppSection } from './header/AppSection';
 })
 export class AppComponent {
   title = 'ng-basic';
-  public currentSection:AppSection;
-
-  public handleAppSectionChange(section:AppSection){
-    this.currentSection = section;
-  }
 }
